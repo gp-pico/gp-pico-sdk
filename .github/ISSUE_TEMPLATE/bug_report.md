@@ -32,7 +32,7 @@ If applicable, add screenshots to help explain your problem.
  - OS: [e.g. MacOS, Ubuntu, Windows]
  - IDE: [e.g. Clion, VSCode]
  - Toolchain: [e.g. ArmGNUToolchain 13.3.rel1]
- - Pico SDK version: [e.g. v2.0.0]
+ - Pico SDK version: [e.g. v2.1.1]
 
 ## Electronics
 

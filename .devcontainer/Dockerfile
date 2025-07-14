@@ -21,7 +21,7 @@
 # SOFTWARE.
 #
 
-FROM ghcr.io/gp-devenv/gp-pico-devenv:24.04-2.0.0-1
+FROM ghcr.io/gp-devenv/gp-pico-devenv:24.04-2.1.1-1
 
 # Switch back to root
 USER root

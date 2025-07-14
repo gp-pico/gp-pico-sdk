@@ -35,7 +35,7 @@ jobs:
     strategy:
       matrix:
         picoBoard: [ 'pico', 'pico_w', 'pico2' ]
-        picoSDKVersion: [ '2.0.0' ]
+        picoSDKVersion: [ '2.1.1' ]
     steps:
       - name: Checkout
         uses: actions/checkout@v4

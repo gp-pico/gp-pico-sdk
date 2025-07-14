@@ -21,11 +21,9 @@
 # SOFTWARE.
 #
 
-# Some options
-set(WITH_STATIC_LIB ON)
-
-# cmocka
-add_subdirectory(cmocka)
+# Static libraries
+#set(WITH_STATIC_LIB ON)
+option(BUILD_SHARED_LIBS "Build using static libraries" off)
 
 # gp-pico
 add_subdirectory(gp_pico)

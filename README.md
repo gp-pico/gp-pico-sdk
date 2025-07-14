@@ -1,8 +1,9 @@
-[![Release](https://github.com/gp-pico/template/actions/workflows/release.yaml/badge.svg)](https://github.com/gp-pico/template/actions/workflows/release.yaml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
-# Template - Kickstart your Pico project
+[![Release](https://github.com/gp-pico/template/actions/workflows/release.yaml/badge.svg)](https://github.com/gp-pico/template/actions/workflows/release.yaml)
+
+# gp-pico-template - Kickstart your Pico project
 
 > Copyright © 2024, Greg PFISTER. MIT License.
 
@@ -57,7 +58,7 @@ git grep -z -l 'gp_pico_template' | xargs -0 sed -i '' -e 's/gp_pico_template/my
 You will need to get the SDK provided `pico_sdk_import.cmake` file:
 
 ```shell
-cp /opt/rpi-pico/v2.0.0/pico-sdk/external/pico_sdk_import.cmake .
+cp /opt/rpi-pico/v2.1.1/pico-sdk/external/pico_sdk_import.cmake .
 ```
 
 At that point, you may want to adjust `LICENSE.md`, `README.md`, ... before
@@ -81,9 +82,9 @@ To build for the Pico (no Wi-Fi) board:
 
 ```shell
 mkdir pico && cd pico                                            && \
-export PICO_SDK_PATH=/opt/rpi-pico/v2.0.0/pico-sdk               && \
-export PICO_EXTRAS_PATH=/opt/rpi-pico/v2.0.0/pico-extras         && \
-export PICO_PLAYGROUND_PATH=/opt/rpi-pico/v2.0.0/pico-playground && \
+export PICO_SDK_PATH=/opt/rpi-pico/v2.1.1/pico-sdk               && \
+export PICO_EXTRAS_PATH=/opt/rpi-pico/v2.1.1/pico-extras         && \
+export PICO_PLAYGROUND_PATH=/opt/rpi-pico/v2.1.1/pico-playground && \
 cmake ../..                                                      && \
 make -j 8
 ```
@@ -92,9 +93,9 @@ To build for the Pico Wi-Fi board:
 
 ```shell
 mkdir pico_w && cd pico_w                                        && \
-export PICO_SDK_PATH=/opt/rpi-pico/v2.0.0/pico-sdk               && \
-export PICO_EXTRAS_PATH=/opt/rpi-pico/v2.0.0/pico-extras         && \
-export PICO_PLAYGROUND_PATH=/opt/rpi-pico/v2.0.0/pico-playground && \
+export PICO_SDK_PATH=/opt/rpi-pico/v2.1.1/pico-sdk               && \
+export PICO_EXTRAS_PATH=/opt/rpi-pico/v2.1.1/pico-extras         && \
+export PICO_PLAYGROUND_PATH=/opt/rpi-pico/v2.1.1/pico-playground && \
 cmake -DPICO_BOARD=pico_w ../..                                  && \
 make -j 8
 ```
@@ -103,9 +104,9 @@ To build for the Pico 2 (no Wi-Fi) board:
 
 ```shell
 mkdir pico2 && cd pico2                                          && \
-export PICO_SDK_PATH=/opt/rpi-pico/v2.0.0/pico-sdk               && \
-export PICO_EXTRAS_PATH=/opt/rpi-pico/v2.0.0/pico-extras         && \
-export PICO_PLAYGROUND_PATH=/opt/rpi-pico/v2.0.0/pico-playground && \
+export PICO_SDK_PATH=/opt/rpi-pico/v2.1.1/pico-sdk               && \
+export PICO_EXTRAS_PATH=/opt/rpi-pico/v2.1.1/pico-extras         && \
+export PICO_PLAYGROUND_PATH=/opt/rpi-pico/v2.1.1/pico-playground && \
 cmake -DPICO_BOARD=pico2 ../..                                   && \
 make -j 8
 ```
@@ -161,7 +162,7 @@ These actions will use the following _sub-actions_:
 Pull request and push related actions consists in building and running unit
 tests.
 
-This current example builds on `pico`, `pico_w` and `pico2` boards.
+This current example builds on `pico`, `pico_w`, `pico2` and `pico2_w` boards.
 
 ### Release
 
